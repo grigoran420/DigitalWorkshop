@@ -1,0 +1,25 @@
+﻿@model DigitalWorkshop.Domain.Entities.TechnologyProcess
+
+@{
+    ViewData["Title"] = "Удаление ТП";
+}
+
+<h1>Удаление</h1>
+<h3>Вы уверены, что хотите удалить этот процесс?</h3>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Название</dt>
+        <dd class="col-sm-10">@Model.Name</dd>
+        
+        <dt class="col-sm-2">Версия</dt>
+        <dd class="col-sm-10">@Model.Version</dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Удалить" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Назад</a>
+    </form>
+</div>

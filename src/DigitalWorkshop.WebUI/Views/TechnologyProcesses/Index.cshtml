@@ -1,0 +1,163 @@
+﻿@model IEnumerable<DigitalWorkshop.Domain.Entities.TechnologyProcess>
+
+@{
+    ViewData["Title"] = "Технологические Процессы";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4 fade-in">
+    <div>
+        <h2 class="h4 fw-bold mb-1">
+            <i class="bi bi-diagram-3-fill text-accent me-2"></i>Управление ТП
+        </h2>
+        <p class="text-muted small mb-0">Реестр технологических процессов производства</p>
+    </div>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="bi bi-plus-lg me-1"></i>Создать ТП
+    </a>
+</div>
+
+<div class="card fade-in" style="animation-delay: 0.1s;">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <span><i class="bi bi-list-task me-2"></i>Список процессов</span>
+        <span class="badge bg-secondary">@Model.Count()</span>
+    </div>
+    <div class="card-body p-0">
+        @if (Model.Any())
+        {
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th style="width: 50px;">ID</th>
+                            <th>Наименование</th>
+                            <th style="width: 120px;">Версия</th>
+                            <th style="width: 150px;">Статус</th>
+                            <th style="width: 100px;" class="text-center">Блок.</th>
+                            <th style="width: 180px;">Дата создания</th>
+                            <th style="width: 220px;" class="text-end">Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="font-monospace text-muted">@item.Id</td>
+                                <td>
+                                    <div class="fw-medium">@item.Name</div>
+                                </td>
+                                <td>
+                                    <span class="font-monospace small">v@item.VersionMajor.@item.VersionMinor</span>
+                                    <div class="text-muted" style="font-size: 0.65rem;">@item.VersionHash?.Substring(0, 8)</div>
+                                </td>
+                                <td>
+                                    @{
+                                        string badgeClass = item.Status switch
+                                        {
+                                            DigitalWorkshop.Domain.Entities.TpStatus.Draft => "bg-status-draft",
+                                            DigitalWorkshop.Domain.Entities.TpStatus.PendingApproval => "bg-status-pending",
+                                            DigitalWorkshop.Domain.Entities.TpStatus.Approved => "bg-status-approved",
+                                            _ => "bg-secondary"
+                                        };
+                                        
+                                        string statusText = item.Status switch
+                                        {
+                                            DigitalWorkshop.Domain.Entities.TpStatus.Draft => "Черновик",
+                                            DigitalWorkshop.Domain.Entities.TpStatus.PendingApproval => "На согласовании",
+                                            DigitalWorkshop.Domain.Entities.TpStatus.Approved => "Утвержден",
+                                            _ => item.Status.ToString()
+                                        };
+                                    }
+                                    <span class="badge @badgeClass">@statusText</span>
+                                </td>
+                                <td class="text-center">
+                                    @if (item.IsLocked)
+                                    {
+                                        <i class="bi bi-lock-fill text-danger" title="Заблокировано"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="bi bi-unlock text-success" title="Редактирование разрешено"></i>
+                                    }
+                                </td>
+                                <td class="text-muted small">@item.CreatedAt.ToString("dd.MM.yyyy HH:mm")</td>
+                                <td class="text-end">
+                                    <div class="btn-group btn-group-sm" role="group">
+                                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-light" title="Просмотр">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                        @if (!item.IsLocked)
+                                        {
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-light" title="Редактировать">
+                                                <i class="bi bi-pencil"></i>
+                                            </a>
+                                        }
+                                        
+                                        @if (item.Status == DigitalWorkshop.Domain.Entities.TpStatus.Draft)
+                                        {
+                                            <form asp-action="SubmitForApproval" asp-route-id="@item.Id" method="post" class="d-inline">
+                                                <button type="submit" class="btn btn-outline-warning" title="Отправить на согласование">
+                                                    <i class="bi bi-send"></i>
+                                                </button>
+                                            </form>
+                                        }
+                                        else if (item.Status == DigitalWorkshop.Domain.Entities.TpStatus.PendingApproval)
+                                        {
+                                            <!-- Кнопка Утвердить -->
+                                            <button type="button" class="btn btn-success btn-sm"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#approveModal_@item.Id">
+                                                <i class="bi bi-check-circle"></i> Утвердить
+                                            </button>
+
+                                            <!-- Модальное окно -->
+                                            <div class="modal fade" id="approveModal_@item.Id" tabindex="-1">
+                                                <div class="modal-dialog">
+                                                    <form asp-action="Approve" method="post">
+                                                        <input type="hidden" name="id" value="@item.Id" />
+                                                        <div class="modal-content bg-dark border-secondary">
+                                                            <div class="modal-header border-secondary">
+                                                                <h5 class="modal-title">Утверждение ТП</h5>
+                                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Комментарий</label>
+                                                                    <textarea name="comment" class="form-control bg-dark text-light border-secondary" rows="3" required></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer border-secondary">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                                                                <button type="submit" class="btn btn-success">Подтвердить</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        }
+                                        
+                                        @if (!item.IsLocked && item.Status == DigitalWorkshop.Domain.Entities.TpStatus.Draft)
+                                        {
+                                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger" title="Удалить">
+                                                <i class="bi bi-trash"></i>
+                                            </a>
+                                        }
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <i class="bi bi-folder-x display-4 text-muted mb-3"></i>
+                <p class="text-muted">Технологические процессы отсутствуют</p>
+                <a asp-action="Create" class="btn btn-primary btn-sm">
+                    <i class="bi bi-plus-lg me-1"></i>Создать первый ТП
+                </a>
+            </div>
+        }
+    </div>
+</div>
