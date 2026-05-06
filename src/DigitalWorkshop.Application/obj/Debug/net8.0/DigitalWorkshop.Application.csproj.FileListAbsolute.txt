@@ -1,0 +1,17 @@
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\bin\Debug\net8.0\DigitalWorkshop.Application.deps.json
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\bin\Debug\net8.0\DigitalWorkshop.Application.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\bin\Debug\net8.0\DigitalWorkshop.Application.pdb
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\bin\Debug\net8.0\DigitalWorkshop.Domain.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\bin\Debug\net8.0\DigitalWorkshop.Domain.pdb
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\obj\Debug\net8.0\DigitalWorkshop.Application.csproj.AssemblyReference.cache
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\obj\Debug\net8.0\DigitalWorkshop.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\obj\Debug\net8.0\DigitalWorkshop.Application.AssemblyInfoInputs.cache
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\obj\Debug\net8.0\DigitalWorkshop.Application.AssemblyInfo.cs
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\obj\Debug\net8.0\DigitalWorkshop.Application.csproj.CoreCompileInputs.cache
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\obj\Debug\net8.0\DigitalW.7F50649D.Up2Date
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\obj\Debug\net8.0\DigitalWorkshop.Application.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\obj\Debug\net8.0\refint\DigitalWorkshop.Application.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\obj\Debug\net8.0\DigitalWorkshop.Application.pdb
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\obj\Debug\net8.0\ref\DigitalWorkshop.Application.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\bin\Debug\net8.0\DigitalWorkshop.Infrastructure.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Application\bin\Debug\net8.0\DigitalWorkshop.Infrastructure.pdb
