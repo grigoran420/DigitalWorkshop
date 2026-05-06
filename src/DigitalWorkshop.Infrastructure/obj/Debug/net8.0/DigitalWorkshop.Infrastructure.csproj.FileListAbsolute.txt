@@ -1,0 +1,17 @@
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\bin\Debug\net8.0\DigitalWorkshop.Infrastructure.deps.json
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\bin\Debug\net8.0\DigitalWorkshop.Infrastructure.runtimeconfig.json
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\bin\Debug\net8.0\DigitalWorkshop.Infrastructure.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\bin\Debug\net8.0\DigitalWorkshop.Infrastructure.pdb
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\bin\Debug\net8.0\DigitalWorkshop.Domain.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\bin\Debug\net8.0\DigitalWorkshop.Domain.pdb
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\DigitalWorkshop.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\DigitalWorkshop.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\DigitalWorkshop.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\DigitalWorkshop.Infrastructure.AssemblyInfo.cs
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\DigitalWorkshop.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\DigitalW.C1F34A95.Up2Date
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\DigitalWorkshop.Infrastructure.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\refint\DigitalWorkshop.Infrastructure.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\DigitalWorkshop.Infrastructure.pdb
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\DigitalWorkshop.Infrastructure.genruntimeconfig.cache
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Infrastructure\obj\Debug\net8.0\ref\DigitalWorkshop.Infrastructure.dll
