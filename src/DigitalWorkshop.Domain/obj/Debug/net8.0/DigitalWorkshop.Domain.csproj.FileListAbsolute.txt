@@ -1,0 +1,11 @@
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\bin\Debug\net8.0\DigitalWorkshop.Domain.deps.json
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\bin\Debug\net8.0\DigitalWorkshop.Domain.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\bin\Debug\net8.0\DigitalWorkshop.Domain.pdb
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\obj\Debug\net8.0\DigitalWorkshop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\obj\Debug\net8.0\DigitalWorkshop.Domain.AssemblyInfoInputs.cache
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\obj\Debug\net8.0\DigitalWorkshop.Domain.AssemblyInfo.cs
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\obj\Debug\net8.0\DigitalWorkshop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\obj\Debug\net8.0\DigitalWorkshop.Domain.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\obj\Debug\net8.0\refint\DigitalWorkshop.Domain.dll
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\obj\Debug\net8.0\DigitalWorkshop.Domain.pdb
+C:\Users\MyPC\source\repos\DigitalWorkshop\src\DigitalWorkshop.Domain\obj\Debug\net8.0\ref\DigitalWorkshop.Domain.dll
