@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DigitalWorkshop.Application/DigitalWorkshop.Application.csproj">
+      <BuildDependency Project="src/DigitalWorkshop.Infrastructure/DigitalWorkshop.Infrastructure.csproj" />
+    </Project>
+    <Project Path="src/DigitalWorkshop.Domain/DigitalWorkshop.Domain.csproj" />
+    <Project Path="src/DigitalWorkshop.Infrastructure/DigitalWorkshop.Infrastructure.csproj" />
+    <Project Path="src/DigitalWorkshop.WebUI/DigitalWorkshop.WebUI.csproj" />
+  </Folder>
+</Solution>
